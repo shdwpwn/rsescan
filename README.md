@@ -33,7 +33,7 @@ To fetch certificates for a given domain:
 ```sh
 rsescan -d example.com -cn -key YOUR_API_KEY
 ```
-###Fetch Certificates by Organization
+### Fetch Certificates by Organization
 
 To fetch certificates for a given organization:
 
