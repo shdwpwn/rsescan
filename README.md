@@ -5,8 +5,8 @@ RSEScan is a command-line utility for interacting with the [RSECloud API](https:
 ## Features
 
 - Fetch subdomains for a given domain.
-- Fetch certificates for a given domain.
-- Fetch certificates for a given organization.
+- Fetch IPs from certificates for a given domain.
+- Fetch IPs from certificates for a given organization.
 
 ## Installation
 
@@ -26,14 +26,14 @@ rsescan -d example.com -key YOUR_API_KEY
 ```
 If the API key is not provided, the utility will attempt to read it from `~/.config/rsescan/api_key`.
 
-### Fetch Certificates by Domain
+### Fetch IPs from Certificates by Domain
 
 To fetch certificates for a given domain:
 
 ```sh
 rsescan -d example.com -cn -key YOUR_API_KEY
 ```
-### Fetch Certificates by Organization
+### Fetch IPs from Certificates by Organization
 
 To fetch certificates for a given organization:
 
@@ -54,7 +54,7 @@ www.example.com
 vpn.example.com
 test-dev.example.com
 ```
-### Fetch Certificates by Domain Example
+### Fetch IPs from Certificates by Domain Example
 
 ```sh
 rsescan -d example.com -cn
@@ -66,7 +66,7 @@ Output:
 192.168.1.2:443
 192.168.1.3:443
 ```
-### Fetch Certificates by Organization Example
+### Fetch IPs from Certificates by Organization Example
 
 ```sh
 rsescan -so "Example Org"
